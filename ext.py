@@ -17,8 +17,23 @@ from selenium.webdriver.common.proxy import Proxy, ProxyType
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
+#Este es un ejemplo de la funcion de lectura que leera el archivo donde almacenaras tus bin
+def lectura():
+	archivo=open("","r")
+	leer=archivo.readlines()
+	contador=len(leer)-1
+	cc=leer[contador]
+	return cc, contador
+	pass
+#Esta funcion es la que va almacenar la cc verificaada como TRue
+def vivas(viva):
+	archvio=open("","w")
+	archivo.write(viva)
+	archivo.write("\n")
+	
+	pass
 
-
+#En caso de que quiera incorporar nuevas funcionalidades como extenciones para hacer un bypass de recaptcha 
 
 
 
